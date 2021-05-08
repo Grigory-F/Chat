@@ -1,21 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="google" content="notranslate">
-<meta name="robots" content="index,follow">
-<meta name="description" content=" ">
-<meta name="keywords" content=" ">
-<!-- Необходимо сделать фавикон через известный сервис и подключить,
-так же карточки для ссылки в вк, фейсбук, твиттер. Найти как это сделать в папке Оптимизация сайта,
-сделать другой цвет вкладки для разных браузеров. Все в метатегах-->
-<link rel="stylesheet" href="css/main.css">
-<title>Chat</title>
-</head>
-<body class="page">
-ц
-<script src="js.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Page description" />
+    <link rel="canonical" href="https://www.mywebsite.com/page" />
+    <!-- Messenger's snippets -->
+    <meta property="og:title" content="Unique page title - My Site" />
+    <meta property="og:description" content="Page description" />
+    <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+    <meta property="og:image:alt" content="Image description" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://www.mywebsite.com/page" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/my.webmanifest" />
+    <meta name="theme-color" content="#FF00FF" />
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Chat</title>
+  </head>
+  <body class="page">
+    <div class="container-grid">
+      <div class="navigation">
+        <div class="server-panel">
+          <div class="server-panel__cont-buttons">
+            <div class="server-panel__button server-button server-button--hover server-button--active-js">
+              <div class="server-button__inner-icon">
+                <picture>
+                  <source type="image/avif" srcset="img/.avif" />
+                  <source type="image/webp" srcset="img/.webp" />
+                  <img src="" class="server-button__icon" data-src="" alt="" />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="server-panel__button server-button server-button--hover">
+            <div class="server-button__inner-icon">
+              <picture>
+                <source type="image/avif" srcset="img/.avif" />
+                <source type="image/webp" srcset="img/.webp" />
+                <img src="" class="server-button__icon" data-src="" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="server-control">
+          <div class="server-control__headline server-headline">
+            <div class="server-headline__wrap">
+              <h2 class="server-headline__name-server">Nomad List</h2>
+              <div class="server-headline__inner-icon">
+                <svg display="none">
+                  <symbol id=""></symbol>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="server-control__info">
+            <p class="server-control__info-sign">CHANNELS</p>
+            <span class="server-control__num-channels num-ctrl-info">11</span>
+          </div>
+
+          <div class="server-control__container-list">
+            <ul class="server-control__list list-channel">
+              <li class="list-channel__item list-channel__item--hover list-channel__item--active-js"># general</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># support</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># marketing</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># thailand</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># bali</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># support</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># marketing</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># thailand</li>
+              <li class="list-channel__item list-channel__item--hover control-text"># bali</li>
+            </ul>
+          </div>
+          <div class="server-control__info">
+            <p class="server-control__info-sign">FRIENDS</p>
+            <span class="server-control__num-channels num-ctrl-info">82</span>
+          </div>
+          <div class="server-control__container-list">
+            <div class="server-control__wrap-friend friend-button friend-button--hover friend-button--online-js">
+              <div class="friend-button__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/.avif" />
+                  <source type="image/webp" srcset="img/.webp" />
+                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                </picture>
+              </div>
+              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+            </div>
+            <div class="server-control__wrap-friend friend-button friend-button--hover">
+              <div class="friend-button__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/.avif" />
+                  <source type="image/webp" srcset="img/.webp" />
+                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                </picture>
+              </div>
+              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+            </div>
+            <div class="server-control__wrap-friend friend-button friend-button--hover">
+              <div class="friend-button__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/.avif" />
+                  <source type="image/webp" srcset="img/.webp" />
+                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                </picture>
+              </div>
+              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src=".js" defer></script>
+  </body>
 </html>
