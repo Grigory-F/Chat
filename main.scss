@@ -1,1 +1,12 @@
-@import 'core-style/core';
+// Библиотеки
+@import 'core-style/vendor/normalize';
+// Основа
+@import 'core-style/config/fonts';
+@import 'core-style/config/parameters';
+@import 'core-style/config/mixins';
+@import 'core-style/config/template';
+// Компоненты
+@import 'core-style/components/service-classes';
+@import 'core-style/components/navigation';
+@import 'core-style/components/chat';
+@import 'core-style/components/profile';

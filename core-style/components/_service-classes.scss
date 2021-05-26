@@ -1,0 +1,40 @@
+/* Служебные классы*/
+.page {
+    font-family: "Lato";
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: 325px 1fr 250px;
+        height: 100vh;
+    }
+    .inner-icon-ui {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .active-flag-ui {
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #fd4948;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+          }
+    }
+
+    @media (max-width: $laptop) {
+        /* .container-grid {
+            display: grid;
+            grid-template-columns: 325px 1fr 200px;
+            height: 100vh;
+        } */
+    }

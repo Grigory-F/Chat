@@ -1,89 +1,216 @@
-.container-grid {
-    width: 500px;
-}
 .navigation {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 75px 250px;
 }
 .server-panel {
-
-		&__cont-buttons {
-		}
-
-		&__button {
-		}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  &__cont-buttons {
+    width: 100%;
+  }
+  &__button {
+    position: relative;
+  }
+  &__button--hover:hover .server-button__inner-icon {
+    opacity: 1;
+  }
 }
 .server-button {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  cursor: pointer;
+  &__inner-icon {
+    margin: auto;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.2s;
+    opacity: 0.5;
+  }
 
-		&__inner-icon {
-		}
-
-		&__icon {
-		}
+  &__icon {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &--active-js::before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    background: rgba(143, 143, 143, 1);
+    position: absolute;
+    top: calc(50% - 4px);
+    left: -4px;
+    border-radius: 50%;
+  }
+  &--active-js &__inner-icon {
+    opacity: 1;
+  }
 }
-.server-button--hover {
-}
-.server-button--active-js {
+.server-add-button {
+  &__icon {
+    margin: auto;
+  }
 }
 .server-control {
+  background: rgba(37, 39, 42, 0.9);
+  &__headline {
+  }
 
-		&__headline {
-		}
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #919191;
+    font-weight: bold;
+  }
 
-		&__info {
-		}
+  &__info-sign {
+    margin: 0;
+  }
 
-		&__info-sign {
-		}
+  &__info-num {
+  }
 
-		&__num-channels {
-		}
+  &__container-list {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
-		&__container-list {
-		}
+  &__list {
+  }
 
-		&__list {
-		}
-
-		&__wrap-friend {
-		}
-
-		&__friend-name {
-		}
+  &__wrap-friend {
+  }
 }
 .server-headline {
+  height: 65px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-		&__wrap {
-		}
+  &__name-server {
+    margin: 0;
+    color: white;
+  }
 
-		&__name-server {
-		}
-
-		&__inner-icon {
-		}
+  &__inner-icon {
+    transition: 0.5s;
+  }
+  &__inner-icon--js:hover {
+    transform: rotate(180deg);
+  }
+  &__icon {
+  }
+  &__icon--hover:hover {
+  }
 }
-.num-ctrl-info {
-}
+
 .list-channel {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  margin-bottom: -5px;
+  &__item {
+    padding: 5px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    color: #b5b5b5;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    &::before {
+      content: "#";
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
 
-		&__item {
-		}
+  &__item--hover:hover {
+    background: rgba(112, 112, 112, 0.1);
+  }
 
-		&__item--hover {
-		}
-
-		&__item--active-js {
-		}
+  &__item--active-js {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 700;
+  }
+  &__item--active-js:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
 .control-text {
 }
 .friend-button {
-
-		&__inner-userpic {
-		}
-
-		&__userpic {
-		}
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &__inner-userpic {
+    height: 40px;
+    min-width: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 10px 0 10px;
+    overflow: hidden;
+  }
+  &__userpic {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__friend-name {
+    margin: 0;
+    color: #b5b5b5;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    min-width: 8px;
+    height: 8px;
+    background: rgba(102, 102, 102, 1);
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .friend-button--hover {
 }
-.friend-button--online-js {
+.friend-button--online-js::before {
+  background: #70cc16;
+}
+
+@media (max-width: $laptop) {
+  .navigation {
+    display: none;
+  }
 }

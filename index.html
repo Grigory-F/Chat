@@ -29,27 +29,61 @@
   </head>
   <body class="page">
     <div class="container-grid">
-      <div class="navigation">
+      <section class="navigation">
         <div class="server-panel">
           <div class="server-panel__cont-buttons">
-            <div class="server-panel__button server-button server-button--hover server-button--active-js">
+            <div class="server-panel__button server-panel__button--hover server-button server-button--active-js">
               <div class="server-button__inner-icon">
                 <picture>
-                  <source type="image/avif" srcset="img/.avif" />
-                  <source type="image/webp" srcset="img/.webp" />
-                  <img src="" class="server-button__icon" data-src="" alt="" />
+                  <source type="image/avif" srcset="img/servers/pig.avif" />
+                  <source type="image/webp" srcset="img/servers/pig.webp" />
+                  <img src="img/servers/pig.png" class="server-button__icon" data-src="" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="server-panel__button server-button server-panel__button--hover">
+              <div class="server-button__inner-icon">
+                <picture>
+                  <source type="image/avif" srcset="img/servers/pig.avif" />
+                  <source type="image/webp" srcset="img/servers/pig.webp" />
+                  <img src="img/servers/pig.png" class="server-button__icon" data-src="" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="server-panel__button server-button server-panel__button--hover">
+              <div class="server-button__inner-icon">
+                <picture>
+                  <source type="image/avif" srcset="img/servers/pig.avif" />
+                  <source type="image/webp" srcset="img/servers/pig.webp" />
+                  <img src="img/servers/pig.png" class="server-button__icon" data-src="" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="server-panel__button server-button server-panel__button--hover">
+              <div class="server-button__inner-icon">
+                <picture>
+                  <source type="image/avif" srcset="img/servers/pig.avif" />
+                  <source type="image/webp" srcset="img/servers/pig.webp" />
+                  <img src="img/servers/pig.png" class="server-button__icon" data-src="" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="server-panel__button server-button server-panel__button--hover">
+              <div class="server-button__inner-icon">
+                <picture>
+                  <source type="image/avif" srcset="img/servers/pig.avif" />
+                  <source type="image/webp" srcset="img/servers/pig.webp" />
+                  <img src="img/servers/pig.png" class="server-button__icon" data-src="" alt="" />
                 </picture>
               </div>
             </div>
           </div>
 
-          <div class="server-panel__button server-button server-button--hover">
+          <div class="server-add-button server-button">
             <div class="server-button__inner-icon">
-              <picture>
-                <source type="image/avif" srcset="img/.avif" />
-                <source type="image/webp" srcset="img/.webp" />
-                <img src="" class="server-button__icon" data-src="" alt="" />
-              </picture>
+              <svg width="15px" height="15px" class="server-add-button__icon">
+                <use xlink:href="img/icon/sprite.svg#plus"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -58,71 +92,520 @@
           <div class="server-control__headline server-headline">
             <div class="server-headline__wrap">
               <h2 class="server-headline__name-server">Nomad List</h2>
-              <div class="server-headline__inner-icon">
-                <svg display="none">
-                  <symbol id=""></symbol>
+              <div class="server-headline__inner-icon server-headline__inner-icon--js inner-icon-ui">
+                <svg class="server-headline__icon server-headline__icon--hover" width="15px" height="15px">
+                  <use class="server-headline__gear-icon" xlink:href="img/icon/sprite.svg#gear"></use>
                 </svg>
               </div>
             </div>
           </div>
           <div class="server-control__info">
             <p class="server-control__info-sign">CHANNELS</p>
-            <span class="server-control__num-channels num-ctrl-info">11</span>
+            <span class="server-control__info-num num-channels-info">11</span>
           </div>
-
           <div class="server-control__container-list">
             <ul class="server-control__list list-channel">
-              <li class="list-channel__item list-channel__item--hover list-channel__item--active-js"># general</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># support</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># marketing</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># thailand</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># bali</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># support</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># marketing</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># thailand</li>
-              <li class="list-channel__item list-channel__item--hover control-text"># bali</li>
+              <li class="list-channel__item list-channel__item--hover list-channel__item--active-js">general</li>
+              <li class="list-channel__item list-channel__item--hover control-text">support</li>
+              <li class="list-channel__item list-channel__item--hover control-text">marketing</li>
+              <li class="list-channel__item list-channel__item--hover control-text">thailand</li>
+              <li class="list-channel__item list-channel__item--hover control-text">bali</li>
+              <li class="list-channel__item list-channel__item--hover control-text">support</li>
+              <li class="list-channel__item list-channel__item--hover control-text">marketing</li>
+              <li class="list-channel__item list-channel__item--hover control-text">thailand</li>
+              <li class="list-channel__item list-channel__item--hover control-text">bali</li>
+              <li class="list-channel__item list-channel__item--hover control-text">bali</li>
             </ul>
           </div>
           <div class="server-control__info">
             <p class="server-control__info-sign">FRIENDS</p>
-            <span class="server-control__num-channels num-ctrl-info">82</span>
+            <span class="server-control__info-num num-friends-info">82</span>
           </div>
           <div class="server-control__container-list">
             <div class="server-control__wrap-friend friend-button friend-button--hover friend-button--online-js">
               <div class="friend-button__inner-userpic">
                 <picture>
-                  <source type="image/avif" srcset="img/.avif" />
-                  <source type="image/webp" srcset="img/.webp" />
-                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img src="img/users/UserPhoto1.png" class="friend-button__userpic" data-src="" alt="" />
                 </picture>
               </div>
-              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+              <p class="friend-button__friend-name control-text">Orlando Diggs</p>
             </div>
             <div class="server-control__wrap-friend friend-button friend-button--hover">
               <div class="friend-button__inner-userpic">
                 <picture>
-                  <source type="image/avif" srcset="img/.avif" />
-                  <source type="image/webp" srcset="img/.webp" />
-                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                  <source type="image/avif" srcset="img/users/UserPhoto2.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto2.webp" />
+                  <img src="img/users/UserPhoto2.png" class="friend-button__userpic" data-src="" alt="" />
                 </picture>
               </div>
-              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+              <p class="friend-button__friend-name control-text">Orlando Diggs</p>
             </div>
             <div class="server-control__wrap-friend friend-button friend-button--hover">
               <div class="friend-button__inner-userpic">
                 <picture>
-                  <source type="image/avif" srcset="img/.avif" />
-                  <source type="image/webp" srcset="img/.webp" />
-                  <img src="" class="friend-button__userpic" data-src="" alt="" />
+                  <source type="image/avif" srcset="img/users/UserPhoto3.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto3.webp" />
+                  <img src="img/users/UserPhoto3.png" class="friend-button__userpic" data-src="" alt="" />
                 </picture>
               </div>
-              <p class="server-control__friend-name control-text">Orlando Diggs</p>
+              <p class="friend-button__friend-name control-text">Orlando Diggs</p>
             </div>
           </div>
         </div>
-      </div>
-      
+      </section>
+      <section class="chat">
+        <div class="chat-head">
+          <div class="chat-head__wrap-layout">
+            <div class="chat-head__cont-titles chat-head-title">
+              <div class="chat-head-title__inner-icon inner-icon-ui burger-icon">
+                <div class="burger-icon__holder burger-icon--hover">
+                  <span class="burger-icon__arrow"></span>
+                </div>
+              </div>
+              <div class="chat-head-title__inner-titles">
+                <h2 class="chat-head-title__name-channel">#general</h2>
+                <div class="chat-head-title__inner-icon inner-icon-ui">
+                  <svg width="15px" height="15px" class="chat-head-title__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 30.3">
+                    <path
+                      opacity="0.5"
+                      d="M15.9,4.5l3.1,6.3l0.5,0.9l1,0.2l7,1l-5.1,4.9l-0.8,0.7l0.2,1l1.2,7l-6.3-3.3l-0.9-0.5L15,23.3l-6.3,3.3l1.2-7l0.2-1
+                      l-0.8-0.7L4.3,13l7-1l1-0.2l0.5-0.9L15.9,4.5 M15.9,0L11,10L0,11.6l8,7.8l-1.9,11l9.8-5.2l9.8,5.2l-1.9-11l8-7.8l-11-1.6L15.9,0
+                      L15.9,0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="chat-head__cont-controls chat-head-controls">
+              <div class="chat-head-controls__search">
+                <div class="chat-head-controls__online">
+                  <div class="chat-head-controls__inner-icon">
+                    <svg width="11px" height="14px" class="chat-head-controls__icon-person">
+                      <use xlink:href="img/icon/sprite.svg#person"></use>
+                    </svg>
+                  </div>
+                  <span class="chat-head-controls__online-num">1,023</span>
+                </div>
+                <div class="chat-head-controls__inner-input">
+                  <input type="text" placeholder="Поиск..." class="chat-head-controls__input" />
+                  <svg width="17px" height="17px" class="chat-head-controls__icon-search">
+                    <use xlink:href="img/icon/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <div class="chat-head-controls__cont-icon">
+                  <div class="chat-head-controls__inner-icon inner-icon-ui active-flag-ui">
+                    <svg width="14px" height="15px" class="chat-head-controls__icon-bell">
+                      <use xlink:href="img/icon/sprite.svg#bell"></use>
+                    </svg>
+                  </div>
+                  <div class="chat-head-controls__inner-icon inner-icon-ui">
+                    <svg width="5px" height="18px" class="chat-head-controls__icon-bell">
+                      <use xlink:href="img/icon/sprite.svg#dots"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-messages scroller-block chat-messages--hover-scroll">
+          <div class="chat-messages__tape">
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="new-massage-time">
+              <hr class="new-massage-time__line" />
+              <time class="new-massage-time__time" datetime="2001-05-15 19:00">aw aw awd wdw</time>
+              <hr class="new-massage-time__line" />
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <span class="message-content__link-photo link-message">my-top-places.jpg</span>
+                <div class="message-content__cont-photo">
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="new-massage-time">
+              <hr class="new-massage-time__line" />
+              <time class="new-massage-time__time" datetime="2001-05-15 19:00">aw aw awd wdw</time>
+              <hr class="new-massage-time__line" />
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <span class="message-content__link-photo link-message">my-top-places.jpg</span>
+                <div class="message-content__cont-photo">
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="new-massage-time">
+              <hr class="new-massage-time__line" />
+              <time class="new-massage-time__time" datetime="2001-05-15 19:00">aw aw awd wdw</time>
+              <hr class="new-massage-time__line" />
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <span class="message-content__link-photo link-message">my-top-places.jpg</span>
+                <div class="message-content__cont-photo">
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                  <div class="message-content__box-photo">
+                    <div class="message-content__inner-photo">
+                      <picture>
+                        <source type="image/avif" srcset="img/picture-message/picture-1.avif" />
+                        <source type="image/webp" srcset="img/picture-message/picture-1.webp" />
+                        <img class="message-content__photo" src="img/picture-message/picture-1.png" data-src="" alt="" />
+                      </picture>
+                    </div>
+                    <div class="message-content__liked message-content__liked--hover">
+                      <span class="message-content__emoji">&#128525;</span>
+                      <span class="message-content__num-liked">123</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <div class="message__inner-userpic">
+                <picture>
+                  <source type="image/avif" srcset="img/users/UserPhoto1.avif" />
+                  <source type="image/webp" srcset="img/users/UserPhoto1.webp" />
+                  <img class="message__userpic" src="img/users/UserPhoto1.png" data-src="" alt="" />
+                </picture>
+              </div>
+              <div class="message__content message-content">
+                <div class="message-content__user-name">
+                  <p class="message-content__name">Harold Adams</p>
+                  <time class="message-content__time-message" datetime="2001-05-15 20:04">20:04</time>
+                </div>
+                <p class="message-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="#" method="POST" class="chat-bottom">
+          <div class="chat-bottom__wrap-layout">
+            <div class="chat-bottom__cont-buttons">
+              <input type="file" class="chat-bottom__input-file" />
+              <label class="chat-bottom__inner-icon inner-icon-ui">
+                <input type="file" class="chat-bottom__input-file" />
+                <svg width="14px" height="22px" class="chat-bottom__icon">
+                  <use xlink:href="img/icon/sprite.svg#clip"></use>
+                </svg>
+              </label>
+              <div class="chat-bottom__inner-icon inner-icon-ui">
+                <svg width="17px" height="24px" class="chat-bottom__icon">
+                  <use xlink:href="img/icon/sprite.svg#microphone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="chat-input">
+              <input value="&#128512;" type="text" placeholder="Введите сообщение..." class="chat-input__input" />
+              <div class="chat-input__cont-attachment">
+                <div class="chat-input__message-attachment message-attachment message-attachment--hover">
+                  <div class="message-attachment__close-button"></div>
+                  <span class="message-attachment__file-name">ollswwdwdawd.jpg</span>
+                </div>
+                <div class="chat-input__message-attachment message-attachment message-attachment--hover">
+                  <div class="message-attachment__close-button"></div>
+                  <span class="message-attachment__file-name">ollswwdwdawd.jpg</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-bottom__inner-icon inner-icon-ui emoji-button">
+              <svg width="20px" height="20px" class="chat-bottom__icon">
+                <use xlink:href="img/icon/sprite.svg#smile"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="chat-popup-emoji chat-popup-emoji--hidden">
+            <div class="chat-popup-emoji__emoji-holder chat-popup-emoji__emoji-holder--often-used-js">
+              <span data-emoji="&#128512;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128512;</span>
+              <span data-emoji="&#128515;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128515;</span>
+              <span data-emoji="&#128516;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128516;</span>
+            </div>
+            <div class="chat-popup-emoji__info-line">
+              <hr class="chat-popup-emoji__line" />
+              <span class="chat-popup-emoji__sign">Часто используемые</span>
+              <hr class="chat-popup-emoji__line" />
+            </div>
+            <div class="chat-popup-emoji__emoji-holder">
+              <span data-emoji="&#128512;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128512;</span>
+              <span data-emoji="&#128515;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128515;</span>
+              <span data-emoji="&#128516;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128516;</span>
+              <span data-emoji="&#128512;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128512;</span>
+              <span data-emoji="&#128515;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128515;</span>
+              <span data-emoji="&#128516;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128516;</span>
+              <span data-emoji="&#128512;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128512;</span>
+              <span data-emoji="&#128515;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128515;</span>
+              <span data-emoji="&#128516;" class="chat-popup-emoji__emoji chat-popup-emoji__emoji--hover">&#128516;</span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="profile">
+        <div class="profile__inner-photo">
+          <picture>
+            <source type="image/avif" srcset="img/users/UserPhotoUncovered.avif" />
+            <source type="image/webp" srcset="img/users/UserPhotoUncovered.webp" />
+            <img class="profile__photo" src="img/users/UserPhotoUncovered.png" data-src="" alt="" />
+          </picture>
+        </div>
+        <div class="profile__holder profile-description">
+          <div class="profile-description__inner-info">
+            <h2 class="profile-description__name">Amilia Luna</h2>
+            <p class="profile-description__sign sign-profession">UI Designer</p>
+          </div>
+          <div class="profile-description__social-links">
+            <a class="profile-description__link-inner" href="#">
+              <svg width="22px" height="22px" class="profile-description__icon-social">
+                <use xlink:href="img/icon/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a class="profile-description__link-inner" href="#">
+              <svg width="22px" height="22px" class="profile-description__icon-social">
+                <use xlink:href="img/icon/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a class="profile-description__link-inner" href="#">
+              <svg width="22px" height="22px" class="profile-description__icon-social">
+                <use xlink:href="img/icon/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a class="profile-description__link-inner" href="#">
+              <svg width="22px" height="22px" class="profile-description__icon-social">
+                <use xlink:href="img/icon/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="profile-description__cont-control">
+            <div class="profile-description__button-message"><span class="profile-description__button-text">Сообщение</span></div>
+            <div class="profile-description__datalist-option"></div>
+          </div>
+          <div class="profile-description__inner-info">
+            <p class="profile-description__sign">Username</p>
+            <span class="profile-description__contact profile-sign-username">@amilia_lu</span>
+          </div>
+          <div class="profile-description__inner-info">
+            <p class="profile-description__sign">Email</p>
+            <span class="profile-description__contact profile-sign-email">a-luna@gmail.com</span>
+          </div>
+          <div class="profile-description__inner-info">
+            <p class="profile-description__sign">Skype</p>
+            <span class="profile-description__contact profile-sign-skype">amiluna</span>
+          </div>
+          <div class="profile-description__inner-info">
+            <p class="profile-description__sign">Timezone</p>
+            <time class="profile-description__contact profile-sign-timezone">2:21 PM Local time</time>
+          </div>
+        </div>
+      </section>
     </div>
-    <script src=".js" defer></script>
+    <script src="js.js" defer></script>
   </body>
 </html>
